@@ -120,7 +120,7 @@ public class Week2 {
 
 
 	public static void opdrachtAchtB() {
-		driver driver = new driver();
+		Driver driver = new Driver();
 		if (BoeBot.digitalRead(5) && BoeBot.digitalRead(6)) {
 			System.out.println("werkt");
 			BoeBot.digitalWrite(1, false);
