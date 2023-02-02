@@ -137,6 +137,21 @@ public class Week2 {
 		}
 	}
 
+	public static void opdrachtZesA() {
+		Driver driver = new Driver();
+		while (true) {
+			driver.getToSpeed(-50);
+			driver.getToSpeed(-25);
+			driver.getToSpeed(0);
+			BoeBot.wait(100);
+			driver.getToSpeed(50);
+			driver.getToSpeed(25);
+			driver.getToSpeed(0);
+			BoeBot.wait(100);
+
+		}
+	}
+
 	public static void opdrachtZeven() {
 		BoeBot.setMode(0, PinMode.Output);
 

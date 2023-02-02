@@ -5,6 +5,6 @@ import Week2.Week2;
 public class RobotMain {
 
     public static void main(String[] args) {
-        Week2.opdrachtVijfB();
+        Week2.opdrachtZesA();
     }
 }

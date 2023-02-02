@@ -9,7 +9,8 @@ public class Driver {
 
 	public void getToSpeed(int newSpeed) {
 
-		if (newSpeed < speed) {
+
+		 if (newSpeed < speed) {
 			while (speed != newSpeed) {
 				speed -= 1;
 				leftServo.update(1500 - speed);
