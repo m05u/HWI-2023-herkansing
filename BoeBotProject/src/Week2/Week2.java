@@ -123,6 +123,20 @@ public class Week2 {
 		}
 	}
 
+	public static void opdrachtVijfB() {
+		Servo LeftServo = new Servo(12);
+		BoeBot.setMode(0, PinMode.Output);
+		Servo RightServoMirrored = new Servo(13);
+
+		int signal = 1500;
+		System.out.println("Servos set to " + signal/1000 + " ms.");
+		while (true) {
+			RightServoMirrored.update(signal);
+			LeftServo.update(signal);
+			BoeBot.wait(10);
+		}
+	}
+
 	public static void opdrachtZeven() {
 		BoeBot.setMode(0, PinMode.Output);
 
