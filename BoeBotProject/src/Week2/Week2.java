@@ -2,6 +2,8 @@ package Week2;
 
 import TI.*;
 
+import java.awt.*;
+
 public class Week2 {
 	public static void ledStandard() {
 		BoeBot.setMode(0, PinMode.Output);
@@ -98,6 +100,15 @@ public class Week2 {
 		}
 	}
 
+	public static void opdrachtVierB() {
+
+		while (true) {
+			for (int i = 0; i < 360; i++) {
+				Color color =ColorFader.fade(i/360f);
+				System.out.println("RGB values: " + color.getRed() + " " + color.getGreen()+ " " + color.getBlue());
+			}
+		}
+	}
 
 	public static void opdrachtVijfA() {
 		Servo LeftServo = new Servo(12);
