@@ -7,6 +7,9 @@ import TI.PinMode;
 import java.awt.*;
 
 public class RGB {
+	public RGB() {
+	}
+
 	public static void Opdracht3a() {
 		BoeBot.setMode(0, PinMode.Output); // red
 		BoeBot.setMode(1, PinMode.Output); // green
@@ -16,8 +19,8 @@ public class RGB {
 		boolean off = true;
 
 		BoeBot.digitalWrite(0, on);
-		BoeBot.digitalWrite(1, off);
-		BoeBot.digitalWrite(2, off);
+		BoeBot.digitalWrite(1, on);
+		BoeBot.digitalWrite(2, on);
 	}
 	public static void Opdracht3b() {
 		// init
