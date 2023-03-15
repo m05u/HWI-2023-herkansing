@@ -1,13 +1,19 @@
+import Week2.*;
 import TI.BoeBot;
-import TI.PWM;
-import TI.PinMode;
-import Week2.RGB;
-
-import java.awt.*;
 
 public class RobotMain {
 
+	/**
+	 * Main loop for the robot
+	 */
 	public static void main(String[] args) {
-		RGB.Opdracht3b();
+		while (true) {
+			
+			// Add robot code here
+			PWMLED.Opdracht2a();
+
+			// Wait 20ms
+			BoeBot.wait(20);
+		}
 	}
 }
