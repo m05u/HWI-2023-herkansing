@@ -1,5 +1,5 @@
 import Week2.*;
-import TI.BoeBot;
+import TI.*;
 
 public class RobotMain {
 
@@ -7,13 +7,15 @@ public class RobotMain {
 	 * Main loop for the robot
 	 */
 	public static void main(String[] args) {
-		while (true) {
-			
-			// Add robot code here
-			PWMLED.Opdracht2a();
+		Buzzer buzzer = new Buzzer(0);
+		int[] freqs = {1000, 1500, 2000, 1500};
 
-			// Wait 20ms
-			BoeBot.wait(20);
+		while (true) {
+
+			for (int i = 0; i < 4; i++) {
+				buzzer.buzz(freqs[i], 250);
+				BoeBot.wait(2);
+			}
 		}
 	}
 }
